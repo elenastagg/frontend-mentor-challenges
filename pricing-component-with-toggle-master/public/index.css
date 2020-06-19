@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import "toggle.css";
+
+:root {
+  --linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --light-blue: hsl(236, 72%, 79%);
+  --dark-blue: hsl(237, 63%, 64%);
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+  font: 700 15px "Montserrat", sans-serif;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 100%;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-color: var(--very-light-grayish-blue);
+  background-image: url("images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 12rem -2rem;
+}
+
+#a-m-selector {
+  color: var(--grayish-blue);
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  margin: 4rem;
+}
+
+#pricing-grid {
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  width: 90%;
+  margin: auto;
+}
+
+.module {
+  border-radius: 0.5rem;
+}
+.white-module {
+  box-shadow: 0px 1px 8px 0px rgba(179, 181, 198, 1);
+  background: white;
+  color: var(--grayish-blue);
+}
+.blue-module {
+  background: var(--linear-gradient);
+  color: white;
+}
+h3 {
+  padding-top: 1.25rem;
+}
+.price {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.content {
+  padding: 1.5rem;
+}
+
+.benefit-container {
+  border-top: solid 1px var(--light-grayish-blue);
+  padding: 1rem;
+}
+button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 85%;
+  margin: 1rem auto 1.75rem auto;
+  outline: none;
+  border-style: none;
+  text-transform: uppercase;
+}
+.bottom-border {
+  border-bottom: solid 1px var(--light-grayish-blue);
+}
+.blue-button {
+  background: var(--linear-gradient);
+  color: white;
+}
+.blue-button:active {
+  background: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid var(--dark-grayish-blue);
+}
+.white-button {
+  background: white;
+  color: hsl(237, 63%, 64%);
+}
+.white-button:active {
+  background: var(--dark-blue);
+  color: white;
+  border: 1px solid white;
+}
+footer {
+  color: var(--light-grayish-blue);
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  padding: 0rem 3rem;
+}
+a {
+  color: var(--light-grayish-blue);
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-columns: 12% 25% 25% 25% 12%;
+    background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+  }
+  #a-m-selector {
+    color: var(--grayish-blue);
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+  }
+
+  #pricing-grid {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 4.5rem;
+    height: 85%;
+    width: 100%;
+  }
+  .white-module {
+    margin: 1.25rem 0 1.2rem 0;
+  }
+  .blue-module {
+    padding-top: 1.25rem;
+  }
+
+  footer {
+    padding-top: 1rem;
+    grid-column-start: 3;
+  }
+}

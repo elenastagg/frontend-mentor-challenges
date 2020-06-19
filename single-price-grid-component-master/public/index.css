@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+/*COLOURS*/
+/*GRID LAYOUT*/
+.component-container {
+  margin: auto;
+  width: 95%;
+  background: #e5eff5;
+}
+
+.header-box {
+  box-shadow: 0px 5px 35px -6px rgba(140, 142, 143, 0.71);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: white;
+}
+
+.two-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/*BOX STYLING*/
+body {
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+}
+
+.box-padding {
+  padding: 10px 25px 10px 25px;
+}
+
+.small-box-1 {
+  background-color: #2ab2af;
+  box-shadow: 0px 10px 35px -6px rgba(140, 142, 143, 0.71);
+}
+
+.small-box-2 {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgba(42, 178, 175, 0.7);
+  box-shadow: 0px 10px 35px -6px rgba(140, 142, 143, 0.71);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sign-up-button {
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 1px 8px 8px 1px rgba(79, 82, 82, 0.2);
+  background-color: #c0df34;
+}
+
+/*FONT STYLES*/
+.white-font {
+  color: white;
+}
+
+.cyan-font {
+  color: #2ab2af;
+}
+
+.green-font {
+  color: #c0df34;
+}
+
+.grey-blue-font {
+  color: #98a6bd;
+}
+
+.pricing {
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+.normal-font-size {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.opaque-font {
+  opacity: 1;
+}
+
+.transparent-font {
+  opacity: 0.7;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/*FOR NON-MOBILE SCREENS*/
+@media (min-width: 415px) {
+  .small-box-1 {
+    border-bottom-left-radius: 8px;
+  }
+
+  .small-box-2 {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+
+  .component-container {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+  }
+
+  .box-padding {
+    padding: 20px 45px 20px 45px;
+  }
+}
+/*FOR BIGGER SCREENS*/
+@media (min-width: 768px) {
+  .component-container {
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .small-box-1 {
+    border-bottom-left-radius: 8px;
+  }
+
+  .small-box-2 {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+
+  .box-padding {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .sign-up-button {
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  .line-break {
+    display: table;
+  }
+
+  button:hover {
+    background: #9cbb11;
+    color: #e5eff5;
+  }
+
+  .normal-font-size {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  p {
+    letter-spacing: 0.02em;
+  }
+
+  .sign-up-button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

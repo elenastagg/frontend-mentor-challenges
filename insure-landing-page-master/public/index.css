@@ -1,0 +1,234 @@
+/* Headings*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+/*body*/
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+body {
+  background: white;
+  font: 16px "Karla", sans-serif;
+  width: 100%;
+}
+#nav {
+  display: flex;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  padding: 1.25rem 0 1.25rem 10.5rem;
+}
+
+.nav-menu {
+  position: absolute;
+  right: 0;
+  display: flex;
+  padding-right: 10.5rem;
+}
+.nav-item {
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav-item:hover {
+  color: var(--dark-violet);
+}
+button {
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid;
+  text-transform: uppercase;
+  font-size: 13px;
+  outline: none;
+}
+.white-border-button {
+  border-color: white;
+  color: white;
+}
+.white-border-button:hover {
+  background-color: white;
+  color: var(--dark-violet);
+}
+.violet-border-button {
+  border-color: var(--very-dark-violet);
+  color: var(--very-dark-violet);
+}
+.violet-border-button:hover {
+  background-color: var(--dark-violet);
+  color: white;
+}
+
+#header-section {
+  display: grid;
+  grid-template-columns: 51% 49%;
+  grid-template-rows: 11% 30% 29% 30%;
+  height: 59rem;
+  background: linear-gradient(180deg, var(--dark-violet) 62%, white 38%);
+  z-index: -1;
+}
+
+.violet-area {
+  background: var(--dark-violet);
+  color: var(--very-light-gray);
+}
+hr {
+  border-top: 0.01rem solid white;
+  width: 25%;
+  margin-left: 0;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.pattern-intro-right {
+  grid-column-start: 2;
+  justify-self: right;
+  margin-top: -13%;
+  overflow: hidden;
+  z-index: 2;
+}
+.pattern-intro-left {
+  grid-column-start: 1;
+  margin: -3rem -11rem;
+  z-index: 2;
+}
+.header-content {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  padding: 0 1.5rem 2rem 10.5rem;
+  margin: 0;
+}
+h1 {
+  font: 4.5rem "DM Serif Display", serif;
+  line-height: 4.5rem;
+  margin: 0;
+}
+.header-text {
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+.header-photo {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  z-index: 1;
+}
+#content-section {
+  display: grid;
+  grid-template-rows: 10% 30% 60%;
+  width: 77%;
+  margin: auto;
+  margin-bottom: 8rem;
+}
+hr.gray-break {
+  border-top: 0.075rem solid var(--grayish-blue);
+  width: 15%;
+  margin-top: -3rem;
+}
+.usp-section {
+  grid-row-start: 3;
+  display: flex;
+  color: var(--very-dark-violet);
+}
+h1.content-title {
+  color: var(--very-dark-violet);
+  margin: -1rem 0 3.5rem 0;
+}
+.usp {
+  padding: 1rem;
+}
+h2.usp-title {
+  font: 1.5rem "DM Serif Display", serif;
+}
+
+.usp-text {
+  color: var(--dark-grayish-violet);
+}
+
+#how-we-work-section {
+  width: 77%;
+  margin: auto;
+  background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-bottom: 11rem;
+}
+.how-we-work-title {
+  font-size: 3.5rem;
+  padding: 4rem 9rem 3.5rem 5rem;
+  line-height: 3.5rem;
+}
+.how-we-work-button {
+  margin: auto;
+}
+
+footer {
+  background-color: var(--very-light-gray);
+  display: grid;
+  background-image: url("images/bg-pattern-footer-desktop.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.footer-header {
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--very-dark-violet);
+  width: 77%;
+  margin: auto;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 0;
+  padding-left: 10.5rem;
+}
+
+.social-logos {
+  position: absolute;
+  right: 0;
+  padding-right: 10.5rem;
+}
+.social-logo:hover {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(8%) saturate(4016%)
+    hue-rotate(215deg) brightness(99%) contrast(85%);
+}
+.attribution {
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  text-align: center;
+  color: var(--dark-grayish-violet);
+  padding: 2rem;
+}
+a {
+  color: var(--dark-grayish-violet);
+}
+a:hover {
+  color: var(--dark-violet);
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  margin: auto;
+  width: 77%;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: var(--dark-grayish-violet);
+  padding: 1rem 0;
+}
+
+.footer-item:hover {
+  text-decoration: underline;
+}

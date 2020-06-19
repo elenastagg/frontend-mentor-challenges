@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend Mentors Base Apparel with form challenge"
+    />
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.0.0/validator.min.js"
+    ></script>
+    <link
+      rel="preload"
+      href="normalize.css"
+      as="style"
+      type="text/css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="preload"
+        rel="stylesheet"
+        type="text/css"
+        href="normalize.css"
+      />
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <section id="header-section">
+      <img alt="logo" class="logo" src="images/logo.svg" />
+    </section>
+    <section id="content-section">
+      <h1 class="gold-title">WE'RE</h1>
+      <h1 class="title">COMING</h1>
+      <h1 class="title">SOON</h1>
+      <p class="copy">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <div id="email-box">
+        <input
+          aria-label="email"
+          id="email"
+          type="email"
+          placeholder="Email Address"
+        />
+        <img
+          alt="error-message"
+          src="./images/icon-error.svg"
+          class="error-icon"
+          id="error-icon"
+          hidden
+        />
+        <button class="arrow-button" type="button" onclick="validate()">
+          <img alt="arrow-button" src="images/icon-arrow.svg" />
+        </button>
+        <script>
+          function validate() {
+            const message = document.getElementById("message");
+            const email = document.getElementById("email").value;
+            const errorIcon = document.getElementById("error-icon");
+            if (validator.isEmail(email)) {
+              message.innerHTML = "";
+              errorIcon.hidden = true;
+              document
+                .getElementById("email-box")
+                .classList.remove("error-outline");
+            } else {
+              message.innerHTML = "Please provide a valid email";
+              errorIcon.hidden = false;
+              document
+                .getElementById("email-box")
+                .classList.add("error-outline");
+            }
+          }
+        </script>
+        <p id="message"></p>
+      </div>
+    </section>
+    <section class="image-section" id="image-section">
+      <div id="main-img" />
+    </section>
+
+    <!-- <footer>
+        <p class="attribution">
+          Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a
+          >. Coded by
+        <a href="https://www.frontendmentor.io/profile/elenastagg"
+        >Elena Stagg</a
+        >.
+        </p>
+      </footer> -->
+  </body>
+</html>

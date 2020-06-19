@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+
+/*COLOURS*/
+$CYAN: hsl(179, 62%, 43%);
+$CYAN-LIGHTER: hsl(179, 62%, 43%, 70%);
+$LIGHT-GREY: hsl(204, 43%, 93%);
+$WHITE: hsl(0, 200%, 100%);
+$BRIGHT-GREEN: hsl(71, 73%, 54%);
+$DARK-GREEN: hsl(71, 83%, 40%);
+$GREY-BLUE: hsl(218, 22%, 67%);
+$BORDER-RADIUS: 8px;
+
+/*GRID LAYOUT*/
+.component-container {
+  margin: auto;
+  width: 95%;
+  background: $LIGHT-GREY;
+}
+.header-box {
+  box-shadow: 0px 5px 35px -6px rgba(140, 142, 143, 0.71);
+  border-top-left-radius: $BORDER-RADIUS;
+  border-top-right-radius: $BORDER-RADIUS;
+  background-color: $WHITE;
+}
+.two-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/*BOX STYLING*/
+body {
+  background-color: $LIGHT-GREY;
+  font-family: "Karla", sans-serif;
+}
+.box-padding {
+  padding: 10px 25px 10px 25px;
+}
+.small-box-1 {
+  background-color: $CYAN;
+  box-shadow: 0px 10px 35px -6px rgba(140, 142, 143, 0.71);
+}
+.small-box-2 {
+  border-bottom-right-radius: $BORDER-RADIUS;
+  border-bottom-left-radius: $BORDER-RADIUS;
+  background-color: $CYAN-LIGHTER;
+  box-shadow: 0px 10px 35px -6px rgba(140, 142, 143, 0.71);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sign-up-button {
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 1px 8px 8px 1px rgba(79, 82, 82, 0.2);
+  background-color: $BRIGHT-GREEN;
+}
+
+/*FONT STYLES*/
+.white-font {
+  color: $WHITE;
+}
+.cyan-font {
+  color: $CYAN;
+}
+.green-font {
+  color: $BRIGHT-GREEN;
+}
+.grey-blue-font {
+  color: $GREY-BLUE;
+}
+.pricing {
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+.normal-font-size {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.opaque-font {
+  opacity: 1;
+}
+.transparent-font {
+  opacity: 0.7;
+}
+.bold-text {
+  font-weight: bold;
+}
+
+/*FOR NON-MOBILE SCREENS*/
+@media (min-width: 415px) {
+  .small-box-1 {
+    border-bottom-left-radius: $BORDER-RADIUS;
+  }
+  .small-box-2 {
+    border-bottom-right-radius: $BORDER-RADIUS;
+    border-bottom-left-radius: 0;
+  }
+  .component-container {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+  }
+
+  .box-padding {
+    padding: 20px 45px 20px 45px;
+  }
+}
+
+/*FOR BIGGER SCREENS*/
+@media (min-width: 768px) {
+  .component-container {
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .small-box-1 {
+    border-bottom-left-radius: $BORDER-RADIUS;
+  }
+  .small-box-2 {
+    border-bottom-right-radius: $BORDER-RADIUS;
+    border-bottom-left-radius: 0;
+  }
+  .box-padding {
+    padding: 20px 40px 20px 40px;
+  }
+  .sign-up-button {
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .line-break {
+    display: table;
+  }
+  button:hover {
+    background: $DARK-GREEN;
+    color: $LIGHT-GREY;
+  }
+  .normal-font-size {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  p {
+    letter-spacing: 0.02em;
+  }
+  .sign-up-button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}

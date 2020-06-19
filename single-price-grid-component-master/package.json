@@ -1,0 +1,24 @@
+{
+  "name": "single-price-grid-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles:public",
+    "build": "sass styles:public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenastagg/design-practice-single-price-grid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elenastagg/design-practice-single-price-grid/issues"
+  },
+  "homepage": "https://github.com/elenastagg/design-practice-single-price-grid#readme",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}

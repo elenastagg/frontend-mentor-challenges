@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*COLOURS*/
+$VIOLET: hsl(257, 40%, 49%);
+
+body {
+  background: url("./images/bg-mobile.svg");
+  background-color: $VIOLET;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.logo {
+  padding: 24px;
+  width: 35%;
+  align-self: flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.screenshot {
+  width: 85%;
+  align-self: center;
+  padding-top: 15%;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 50px 50px 0px 50px;
+}
+
+.main-text {
+  font-family: "Open Sans", sans-serif;
+  opacity: 90%;
+  padding: 26px;
+}
+
+button {
+  color: $VIOLET;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+  box-shadow: 0px 7px 8px -7px rgba(48, 25, 48, 1);
+}
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 35px;
+}
+.icon {
+  border: solid 1px;
+  border-radius: 50%;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+i {
+  padding: 7px;
+  justify-content: center;
+  font-size: 11px;
+}
+
+footer {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  a {
+    color: white;
+  }
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-color: $VIOLET;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .logo {
+    padding: 50px;
+    width: 200px;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    padding: 35px 50px 50px 50px;
+    align-items: center;
+    height: 506px;
+  }
+  .screenshot {
+    width: 55%;
+    padding-top: 0;
+  }
+  .introduction {
+    text-align: left;
+    width: 45%;
+    height: 100%;
+    padding: 40px 50px 0 60px;
+  }
+  .title {
+    line-height: 50px;
+    font-size: 38px;
+    padding: 0;
+  }
+
+  .main-text {
+    font-size: 18px;
+    padding: 0 0 35px 0;
+  }
+
+  button {
+    font-size: 18px;
+    border-radius: 25px;
+    width: 38%;
+    padding: 12px;
+  }
+  button:hover {
+    background-color: #994ac9;
+    color: white;
+  }
+  .social-logos {
+    justify-content: flex-end;
+    padding-top: 190px;
+    margin: 0;
+  }
+  .icon:hover {
+    background-color: white;
+    color: #994ac9;
+  }
+  i {
+    font-size: 16px;
+  }
+}
